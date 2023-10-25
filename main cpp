@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main() 
+{
+    // Введення довжин ребер
+    double a, b, c;
+    std::cout << "Введіть довжину ребра a: ";
+    std::cin >> a;
+    std::cout << "Введіть довжину ребра b: ";
+    std::cin >> b;
+    std::cout << "Введіть довжину ребра c: ";
+    std::cin >> c;
+
+    // Обчислення об'єму
+    double volume = a * b * c;
+
+    // Обчислення площі поверхні
+    double surface_area = 2 * (a * b + b * c + a * c);
+
+    // Виведення результатів
+    std::cout << "Об'єм паралелепіпеда: " << volume << std::endl;
+    std::cout << "Площа поверхні паралелепіпеда: " << surface_area << std::endl;
+
+    return 0;
+}
